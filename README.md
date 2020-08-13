@@ -38,7 +38,7 @@ To using the plugin you have to activate it on the ***Settings / Plugins*** page
 
 ### Demo
 
-[Click here...](https://github.com/tompidev/tracking-master/blob/master/demo.md)
+[Click here...](https://github.com/tompidev/tracking-master-plugin/blob/master/demo.md)
 
 -----
 
