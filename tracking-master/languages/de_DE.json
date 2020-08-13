@@ -1,0 +1,20 @@
+{
+	"plugin-data":
+	{
+		"name": "Tracking Master",
+		"description": "Besucherdaten von verschiedenen Webanalyseanbietern verfolgen (zB. Google Analytics)"
+	},
+	"yes": "Ja",
+	"no": "Nein",
+	"info": "Der Tracking-Code wird nur dann in den Quellcode der Website eingefügt, wenn alle Einstellungen korrekt eingegeben wurden. Der Entwickler ist nicht verantwortlich für Fehler, die aufgrund einer falschen Einrichtung auftreten. Jeder Code ist ein 'versteckter Code', was bedeutet, dass nichts davon auf der Website angezeigt wird. Er misst einfach alle Momente und den Verkehr, den die Besucher auf der Website machen, und überträgt sie an den Dienstanbieter.",
+	"account-number": "Konto-ID",
+	"please-enter-your-google-analytics-account-number-eg": "Bitte geben Sie Ihre Google Analytics-Konto-ID ein, zB.",
+	"please-enter-your-clickycom-website-id-number-eg": "Bitte geben Sie Ihre Clicky.com Website-ID, zB.",
+	"please-enter-your-histatscom-website-id-number-eg": "Bitte geben Sie Ihre Histats.com Website-ID, zB.",
+	"do-not-have-an-account-yet?-register-here": "Sie haben noch keinen Account? Registrieren Sie sich hier",
+	"do-you-want-to-use-this-service?": "Möchten Sie diesen Service nutzen?",
+	"please-choose-a-tracking-code-type": "Bitte wählen Sie die Art des Tracking-Codes",
+	"async-or-no-javascript-code?": "\"Async\" oder \"ohne Javascript\" Code?",
+	"async-code": "Rückverfolgung mit Javascript. In diesem Fall werden nur Geräte nachverfolgt, die Javascript tatsächlich unterstützen, und Besucher, die es nicht deaktivieren. Viele Crawler und Roboter im Internet führen kein Javascript aus. Das heißt: Wenn Sie nur Javascript verwenden, werden diese automatisch ausgeschlossen und verunreinigen Ihre Informationen nicht.",
+	"nojs-code": "Rückverfolgung ohne Verwendung von Javascript. Tracking ohne Javascript bietet nicht so detaillierte Statistiken wie asynchrones Tracking, kann jedoch das Laden von Seiten weniger verlangsamen."
+}

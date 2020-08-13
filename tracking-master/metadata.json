@@ -1,0 +1,10 @@
+{
+	"author": "Tompi Developments",
+	"email": "support@tompidev.com",
+	"website": "https://github.com/tompidev",
+	"version": "0.0.1",
+	"releaseDate": "2020-08-11",
+	"license": "MIT",
+	"compatible": "3.x",
+	"notes": ""
+}

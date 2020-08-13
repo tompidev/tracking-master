@@ -1,0 +1,6 @@
+h3 img{
+    float:left; margin-right:15px; height: 55px; vertical-align: bottom;
+}
+.no-account, .js-tip{
+    font-size: 80%;
+}

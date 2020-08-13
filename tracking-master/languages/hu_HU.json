@@ -1,0 +1,20 @@
+{
+	"plugin-data":
+	{
+		"name": "Tracking Master",
+		"description": "Látogatói adatok nyomon követése különböző webanalítikai szolgltatók által (pl. Google Analytics)"
+	},
+	"yes": "Igen",
+	"no": "Nem",
+	"info": "A nyomkövető kód bármelyike csak akkor lesz beillesztve a weboldal forráskódjába, ha minden beállítás helyesen lett kitöltve. A helytelen beállítás miatt előforduló hibákért a fejlesztőt nem terheli felelősség. Minden kód 'rejtett kód', ami annyit jelent, hogy a weboldalon semmi sem jelenik meg belőle, egyszerűen csak méri és továbbítja a szolgáltató felé a honlapon a látogatók által tett összes mozzanatot, forgalmat.",
+	"account-number": "fiókazonosító",
+	"please-enter-your-google-analytics-account-number-eg": "Kérlek add meg a Google Analytics fiók azonosítódat pl.",
+	"please-enter-your-clickycom-website-id-number-eg": "Kérlek add meg a Clicky.com weboldal azonosítót pl.",
+	"please-enter-your-histatscom-website-id-number-eg": "Kérlek add meg a Histats.com weboldal azonosítót pl.",
+	"do-not-have-an-account-yet?-register-here": "Még nincs fiókod? Regisztrálj egyet itt",
+	"do-you-want-to-use-this-service?": "Szeretnéd használni ezt a szolgáltatást?",
+	"please-choose-a-tracking-code-type": "Kérlek válaszd ki a követőkód típusát",
+	"async-or-no-javascript-code?": "\"Async\" vagy \"Javascript nélküli\" kód?",
+	"async-code": "Nyomkövetés Javascript használatával. Ebben az esetben csak azokat az eszközök lesznek követve, amelyek valóban támogatják a Javascriptet, és azokat a látogatókat, akik nem tiltják le azt. Sok bejáró (crawler) és robot az interneten nem hajtja végre a Javascriptet. Jelentés: ha csak a Javascript használatával követi nyomon, akkor ezeket automatikusan kizárja, és nem szennyezik az Ön adatait.",
+	"nojs-code": "Nyomkövetés Javascript használata nélkül. A javascript nélküli követés nem nyújt annyira részletes statisztikát, mint az aszinkron követés, viszont kevésbé lassíthatja az oldal betöltődését."
+}
