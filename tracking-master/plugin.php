@@ -6,12 +6,12 @@
 *  @email          :  support@tompidev.com
 *  @license        :  MIT
 *
-*  @last-modified  :  2020-08-12 22:25:29 CET
-*  @release        :  0.0.1 Build 3131
+*  @last-modified  :  2020-09-01 00:08:08 CET
+*  @release        :  1.0.0
 **/
 
 class pluginTrackingMaster extends Plugin {
-    
+
   public function init() {
     $this->dbFields = array(
 		'ga-select'=>'no',              // Google select
@@ -33,14 +33,14 @@ class pluginTrackingMaster extends Plugin {
 	{
 		global $L;
 
-        /* 
+        /*
         * Show the description of the plugin in the settings
         */
 		$html  = PHP_EOL.'<div class="alert alert-primary" role="alert">';
 		$html .= $this->description();
         $html .= '</div>'.PHP_EOL;
-        
-        
+
+
         /*
         * Google analytics
         */
@@ -62,7 +62,7 @@ class pluginTrackingMaster extends Plugin {
 		$html .= '</div>'.PHP_EOL;
 		$html .= '</div>'.PHP_EOL;
 		$html .= '</div>'.PHP_EOL;
-        
+
         /*
         * Clicky
         */
@@ -90,7 +90,7 @@ class pluginTrackingMaster extends Plugin {
 		$html .= '</div>'.PHP_EOL;
 		$html .= '</div>'.PHP_EOL;
         $html .= '</div>'.PHP_EOL;
-        
+
         /*
         * Histats
         */
@@ -117,13 +117,13 @@ class pluginTrackingMaster extends Plugin {
 		$html .= '</div>'.PHP_EOL;
 		$html .= '</div>'.PHP_EOL;
 		$html .= '</div>'.PHP_EOL;
-		$html .= '</div>'.PHP_EOL;        
+		$html .= '</div>'.PHP_EOL;
 
 		$html .= '<div class="m-3">';
 		$html .= '<span class="tip">'.$L->get('info').'</span>';
         $html .= '</div>';
-        
-        /* 
+
+        /*
         * Displaying version of the plugin
         */
         $html .= PHP_EOL.'<div class="text-center pt-3 mt-5 border-top text-muted">'.PHP_EOL;
@@ -136,23 +136,23 @@ class pluginTrackingMaster extends Plugin {
     }
 
     public function siteHead(){
-        
+
         /*
         * Google Analytics code
         */
         if($this->getValue('ga-select') === 'yes'){
-            $html = ' 
+            $html = '
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id='.$this->getValue('ga-id').'"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag("js", new Date());
-    
+
       gtag("config", "'.$this->getValue('ga-id').'");
     </script>'.PHP_EOL;
-        } 
-        
+        }
+
         /*
         * Clicky code
         */
@@ -165,13 +165,13 @@ class pluginTrackingMaster extends Plugin {
     .PHP_EOL;
         }
         }
-        
+
  		return $html;
     }
 
-    public function siteBodyEnd() 
+    public function siteBodyEnd()
     {
-        
+
         /*
         * Clicky code
         */
@@ -185,7 +185,7 @@ class pluginTrackingMaster extends Plugin {
     .PHP_EOL;
         }
         }
-        
+
         /*
         * Histats standard code
         */
@@ -207,7 +207,7 @@ class pluginTrackingMaster extends Plugin {
     <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?'.$this->getValue('histats-id').'&101" alt="" border="0"></a></noscript>'
     .PHP_EOL;
         }else{
-        /* 
+        /*
         * Histats No-Javascript code
         */
             $html .= '
@@ -217,25 +217,25 @@ class pluginTrackingMaster extends Plugin {
     <!-- Histats.com  END  -->';
         }
         }
-        
+
  		return $html;
 
     }
 
-    public function adminHead() 
+    public function adminHead()
     {
         $html = '<link rel="stylesheet" type="text/css" href="'.HTML_PATH_ASSETS.'css/style.css">'.PHP_EOL;
-        
+
         return $html;
     }
 
-    public function adminBodyEnd() 
+    public function adminBodyEnd()
     {
         global $L;
 
         $html = PHP_EOL.'<script>'.PHP_EOL;
 
-        /* 
+        /*
         * Google analytics
         */
         if($this->getValue('ga-select')==='yes'){
@@ -256,7 +256,7 @@ class pluginTrackingMaster extends Plugin {
         $html .= '}'.PHP_EOL;
         $html .= '});'.PHP_EOL;
 
-        /* 
+        /*
         * Clicky
         */
         if($this->getValue('clicky-select')==='yes'){
@@ -290,7 +290,7 @@ class pluginTrackingMaster extends Plugin {
         $html .= '}'.PHP_EOL;
         $html .= '});'.PHP_EOL;
 
-        /* 
+        /*
         * Histats
         */
         if($this->getValue('histats-select')==='yes'){
@@ -325,7 +325,7 @@ class pluginTrackingMaster extends Plugin {
         $html .= '});'.PHP_EOL;
 
         $html .= '</script>'.PHP_EOL;
-        
+
         return $html;
     }
 

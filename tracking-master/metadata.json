@@ -1,9 +1,9 @@
 {
-	"author": "Tompi Developments",
+	"author": "TompiDev",
 	"email": "support@tompidev.com",
 	"website": "https://github.com/tompidev",
-	"version": "0.0.1",
-	"releaseDate": "2020-08-11",
+	"version": "1.0.0",
+	"releaseDate": "2020-08-31",
 	"license": "MIT",
 	"compatible": "3.x",
 	"notes": ""
