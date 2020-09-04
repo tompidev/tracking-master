@@ -16,18 +16,5 @@
 	"please-choose-a-tracking-code-type": "Kérlek válaszd ki a követőkód típusát",
 	"async-or-no-javascript-code?": "\"Async\" vagy \"Javascript nélküli\" kód?",
 	"async-code": "Nyomkövetés Javascript használatával. Ebben az esetben csak azokat az eszközök lesznek követve, amelyek valóban támogatják a Javascriptet, és azokat a látogatókat, akik nem tiltják le azt. Sok bejáró (crawler) és robot az interneten nem hajtja végre a Javascriptet. Jelentés: ha csak a Javascript használatával követi nyomon, akkor ezeket automatikusan kizárja, és nem szennyezik az Ön adatait.",
-	"nojs-code": "Nyomkövetés Javascript használata nélkül. A javascript nélküli követés nem nyújt annyira részletes statisztikát, mint az aszinkron követés, viszont kevésbé lassíthatja az oldal betöltődését.",
-	"new-release-warning": "Új Tracking Master verzió jelent meg, kérlek frissíts!",
-	"learn-more": "Tudj meg többet",
-	"release-notes": "Verzió információ",
-	"package": "Csomag",
-	"current-version": "Jelenlegi verzió",
-	"new-version": "Új verzió",
-	"release-date": "Kiadás dátuma",
-	"download-release": "Letöltés",
-	"changelog": "Változás napló",
-	"close": "Bezár",
-	"useful-links": "Hasznos linkek",
-	"try-tompidev-plugins-and-themes": "Próbáld ki a Tompidev kiegészítőket és témákat",
-	"all-plugins-and-themes-from-tompidev": "Összes Tompidev kiegészítő és téma"
+	"nojs-code": "Nyomkövetés Javascript használata nélkül. A javascript nélküli követés nem nyújt annyira részletes statisztikát, mint az aszinkron követés, viszont kevésbé lassíthatja az oldal betöltődését."
 }

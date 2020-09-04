@@ -16,17 +16,5 @@
 	"please-choose-a-tracking-code-type": "Bitte wählen Sie die Art des Tracking-Codes",
 	"async-or-no-javascript-code?": "\"Async\" oder \"ohne Javascript\" Code?",
 	"async-code": "Rückverfolgung mit Javascript. In diesem Fall werden nur Geräte nachverfolgt, die Javascript tatsächlich unterstützen, und Besucher, die es nicht deaktivieren. Viele Crawler und Roboter im Internet führen kein Javascript aus. Das heißt: Wenn Sie nur Javascript verwenden, werden diese automatisch ausgeschlossen und verunreinigen Ihre Informationen nicht.",
-	"nojs-code": "Rückverfolgung ohne Verwendung von Javascript. Tracking ohne Javascript bietet nicht so detaillierte Statistiken wie asynchrones Tracking, kann jedoch das Laden von Seiten weniger verlangsamen.",
-	"new-release-warning": "Neue Tracking Master Plugin-Version ist verfügbar, bitte aktualisieren!",
-	"learn-more": "Mehr erfahren",
-	"release-notes": "Version information",
-	"package": "Paket",
-	"current-version": "Aktuelle Version",
-	"new-version": "Neue Version",
-	"release-date": "Veröffentlichungsdatum",
-	"download-release": "Herunterladen",
-	"close": "Schließen",
-	"useful-links": "Nützliche Links",
-	"try-tompidev-plugins-and-themes": "Probieren Sie Tompidev Plugins und Themen aus",
-	"all-plugins-and-themes-from-tompidev": "Alle Plugins und Themes von Tompidev"
+	"nojs-code": "Rückverfolgung ohne Verwendung von Javascript. Tracking ohne Javascript bietet nicht so detaillierte Statistiken wie asynchrones Tracking, kann jedoch das Laden von Seiten weniger verlangsamen."
 }
