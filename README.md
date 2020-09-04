@@ -38,12 +38,25 @@ To using the plugin you have to activate it on the ***Settings / Plugins*** page
 
 ### Demo
 
-[Click here...](https://github.com/tompidev/tracking-master-plugin/blob/master/demo.md)
+In the demo you can view what is changed. All these changes is without the add-on plugin.
+
+To accessing the demo admin interface, here is your login data:
+
+**User**: DemoUser 
+**Password**: Demo123
+
+[To visit demo site click here...](http://demo.tompidev.com/admin)
 
 -----
 
 ### Release Notes
 
-#### v0.0.1 (11-8-2020)
+##### v1.0.1 (04-9-2020)
+
+* updating release info
+* updating filesystem
+* some bugfixes
+
+##### v1.0.0 (11-8-2020)
 
 * Initial release

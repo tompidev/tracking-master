@@ -1,4 +1,4 @@
-### This is the demo site of Tracking Master for Bludit CMS
+## This is the demo site of Tracking Master for Bludit CMS
 
 #### Activate plugin (after install you need to do this)
 
