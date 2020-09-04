@@ -51,7 +51,7 @@ To accessing the demo admin interface, here is your login data:
 
 ### Release Notes
 
-##### v1.0.1 (04-9-2020)
+##### v1.1.0 (04-9-2020)
 
 * updating release info
 * updating filesystem
