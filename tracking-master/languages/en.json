@@ -6,5 +6,6 @@
 	},
 	"info": "Any of the tracking code will only be pasted into the source code of the website if all settings have been filled in correctly. The developer is not responsible for errors that occur due to incorrect setup. Each code is a 'hidden code', which means that nothing of it appears on the website, it simply measures and transmits to the service provider all the moments and traffic made by the visitors on the website.",
 	"async-code": "Tracing using Javascript. In this case, only devices that actually support Javascript and visitors who do not disable it will be tracked. Many crawlers and robots on the Internet do not execute Javascript. Meaning: if you only track using Javascript, they will be automatically excluded and will not contaminate your information.",
-	"nojs-code": "Tracing without the use of Javascript. Tracking without javascript doesn't provide as detailed statistics as asynchronous tracking, but it may slow down page loading less."
+	"nojs-code": "Tracing without the use of Javascript. Tracking without javascript doesn't provide as detailed statistics as asynchronous tracking, but it may slow down page loading less.",
+	"new-tm-release-warning": "New Tracking Master version is available, please update!"
 }
