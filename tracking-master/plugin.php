@@ -6,8 +6,8 @@
 *  @email          :  support@tompidev.com
 *  @license        :  MIT
 *
-*  @last-modified  :  2020-09-04 23:30:55 CET
-*  @release        :  1.1.0
+*  @last-modified  :  2020-09-05 09:11:26 CET
+*  @release        :  1.1.1
 **/
 
 class pluginTrackingMaster extends Plugin {
