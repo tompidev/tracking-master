@@ -6,7 +6,7 @@
 *  @email          :  support@tompidev.com
 *  @license        :  MIT
 *
-*  @last-modified  :  2020-09-05 09:11:26 CET
+*  @last-modified  :  2020-09-05 11:14:15 CET
 *  @release        :  1.1.1
 **/
 
@@ -139,7 +139,7 @@ class pluginTrackingMaster extends Plugin {
 		* Displaying the plugin version
 		*/
 		$html .= PHP_EOL . '<div class="text-center pt-3 mt-4 border-top text-muted">' . PHP_EOL;
-		$html .= $this->name() . ' - v' . $this->version() . ' @ ' . date('Y') . ' by ' .  $this->author() . PHP_EOL;
+		$html .= $this->name() . ' - v<span id="tmThisVersion">' . $this->version() . '</span> @ ' . date('Y') . ' by ' .  $this->author() . PHP_EOL;
 		$html .= '</div>' . PHP_EOL;
 		$html .= '<div class="text-center">' . PHP_EOL;
 		$html .= '<a class="fa fa-2x fa-globe" href="' . $this->website() . '" target="_blank" title="Visit TompiDev\'s Website"></a>' . PHP_EOL;
@@ -411,9 +411,10 @@ class pluginTrackingMaster extends Plugin {
 
                     // show alert and disable all the function in the plugin if theme version upgrade is necessary
 
-                    if (json.trackingMaster.newVersion > json.trackingMaster.currentVersion) {
+                    var tmThisVersion = $("#tmThisVersion").text();
+                    if (json.trackingMaster.newVersion > tmThisVersion) {
                         $("#tmPackageName").html(json.trackingMaster.package);
-                        $("#tmCurrentVersion").html(json.trackingMaster.currentVersion);
+                        $("#tmCurrentVersion").html(tmThisVersion);
                         $("#tmNewVersion").html( json.trackingMaster.newVersion );
                         $("#tmReleaseDate").html( json.trackingMaster.releaseDate );
                         var changelogObj, i, j, x = "";
@@ -444,6 +445,4 @@ class pluginTrackingMaster extends Plugin {
 
         return $scripts;
     }
-
-
 }
