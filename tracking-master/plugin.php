@@ -6,7 +6,7 @@
 *  @email          :  support@tompidev.com
 *  @license        :  MIT
 *
-*  @last-modified  :  2020-09-04 22:19:18 CET
+*  @last-modified  :  2020-09-04 23:30:55 CET
 *  @release        :  1.1.0
 **/
 
@@ -46,7 +46,7 @@ class pluginTrackingMaster extends Plugin {
         * upgrade is necessary
         * controlled by ajax
         */
-        $html .= '<div id="tmVersionAlert" class="alert alert-light alert-dismissible border-danger text-danger d-none" role="alert">' . $L->g('new-release-warning') . '' . PHP_EOL;
+        $html .= '<div id="tmVersionAlert" class="alert alert-light alert-dismissible border-danger text-danger d-none" role="alert">' . $L->g('new-tm-release-warning') . '' . PHP_EOL;
         $html .= '<a id="learnMore" type="button" class="btn btn-danger btn-sm text-light ml-2" data-toggle="modal" data-target="#versionModal">' . $L->g('Learn more') . '</a>' . PHP_EOL;
         $html .= '</div>' . PHP_EOL;
 
@@ -166,22 +166,22 @@ class pluginTrackingMaster extends Plugin {
        <div calss="container">
             <div class="row">
                 <div class="col-5 font-weight-bold">' . $L->g('Package') . ':</div>
-                <div id="pluginPackageName"></div>
+                <div id="tmPackageName"></div>
             </div>
             <div class="row">
                 <div class="col-5 font-weight-bold">' . $L->g('Current version') . ':</div>
-                <div id="pluginCurrentVersion"></div>
+                <div id="tmCurrentVersion"></div>
             </div>
             <div class="row">
                 <div class="col-5 font-weight-bold">' . $L->g('New version') . ':</div>
-                <div id="pluginNewVersion"></div>
+                <div id="tmNewVersion"></div>
             </div>
             <div class="row">
                 <div class="col-5 font-weight-bold pr-1">' . $L->g('Release date') . ':</div>
-                <div id="pluginReleaseDate"></div>
+                <div id="tmReleaseDate"></div>
             </div>
        </div>
-       <div id="bdaReleaseNotes" class="mt-3 pt-3 border-top"></div>
+       <div id="tmReleaseNotes" class="mt-3 pt-3 border-top"></div>
        <div id="usufelLinks" class="mt-3 pt-3 border-top">
        <h5>' . $L->g("Useful Links") . '</h5>
            <a href="http://demo.tompidev.com/" target="_blank">Demo website<span class="fa fa-external-link ml-2"></span></a>(' . $L->g('Try Tompidev plugins and themes') . ')<br>
@@ -189,8 +189,8 @@ class pluginTrackingMaster extends Plugin {
        </div>
      </div>
      <div class="modal-footer">
-        <a id="downloadLink" class="btn btn-primary" href="" target="_blank"><i class="fa fa-download"></i>' . $L->g('Download release') . '</a>
-        <a id="changelogLink" class="btn btn-primary" href="" target="_blank"><i class="fa fa-info-circle"></i>' . $L->g('Changelog') . '</a>
+        <a id="tmdownloadLink" class="btn btn-primary" href="" target="_blank"><i class="fa fa-download"></i>' . $L->g('Download release') . '</a>
+        <a id="tmchangelogLink" class="btn btn-primary" href="" target="_blank"><i class="fa fa-info-circle"></i>' . $L->g('Changelog') . '</a>
         <a id="github" class="btn btn-primary" href="" target="_blank"><i class="fa fa-github"></i>Github</a>
        <button type="button" class="btn btn-secondary" data-dismiss="modal">' . $L->g('Close') . '</button>
      </div>
@@ -412,10 +412,10 @@ class pluginTrackingMaster extends Plugin {
                     // show alert and disable all the function in the plugin if theme version upgrade is necessary
 
                     if (json.trackingMaster.newVersion > json.trackingMaster.currentVersion) {
-                        $("#pluginPackageName").html(json.trackingMaster.package);
-                        $("#pluginCurrentVersion").html(json.trackingMaster.currentVersion);
-                        $("#pluginNewVersion").html( json.trackingMaster.newVersion );
-                        $("#pluginReleaseDate").html( json.trackingMaster.releaseDate );
+                        $("#tmPackageName").html(json.trackingMaster.package);
+                        $("#tmCurrentVersion").html(json.trackingMaster.currentVersion);
+                        $("#tmNewVersion").html( json.trackingMaster.newVersion );
+                        $("#tmReleaseDate").html( json.trackingMaster.releaseDate );
                         var changelogObj, i, j, x = "";
                         changelogObj = [ json.trackingMaster.changelog ];
                         console.log(changelogObj);
@@ -425,10 +425,10 @@ class pluginTrackingMaster extends Plugin {
                             x += "<span class=\"fa fa-arrow-right ml-2\"></span>" + json.trackingMaster.changelog[i].items[j] + "<br>";
                             }
                         }
-                        $("#bdaReleaseNotes").html( x );
+                        $("#tmReleaseNotes").html( x );
                         $("#tmVersionAlert").removeClass("d-none");
-                        $("#downloadLink").attr("href",  json.trackingMaster.downloadLink );
-                        $("#changelogLink").attr("href", json.trackingMaster.changelogLink );
+                        $("#tmdownloadLink").attr("href",  json.trackingMaster.downloadLink );
+                        $("#tmchangelogLink").attr("href", json.trackingMaster.changelogLink );
                         $("#github").attr("href", json.trackingMaster.github );
                     }else{
                     $("#formContent").removeClass("d-none");
