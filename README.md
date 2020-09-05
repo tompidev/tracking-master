@@ -11,6 +11,7 @@ Tracking Master is a Multi-provider web analytics tracker.
 * multi-provider as Google Analytics, Clicky and Histats
 * using all tracker in the same time
 * Asynchronous and Non-Javascript tracking code (as you are selecting)
+* integrated plugin upgrade system
 
 ------
 
@@ -50,6 +51,10 @@ To accessing the demo admin interface, here is your login data:
 -----
 
 ### Release Notes
+
+##### v1.1.0 (04-9-2020)
+
+* bug fixes
 
 ##### v1.1.0 (04-9-2020)
 
